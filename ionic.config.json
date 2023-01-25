@@ -1,0 +1,7 @@
+{
+  "name": "exoProfil",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
