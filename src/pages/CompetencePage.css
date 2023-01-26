@@ -1,0 +1,14 @@
+.card {
+    padding: 2%;
+}
+
+.title {
+    text-align: center;
+}
+
+button {
+    background-color: brown;
+    width: 4em;
+    height: 3em;
+    border-radius: 0.5em;
+}

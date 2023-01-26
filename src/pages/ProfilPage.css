@@ -1,0 +1,22 @@
+h5 {
+   color: brown;
+   margin-left: 1em;
+}
+
+img {
+    width: 50%;
+}
+
+.card {
+    padding: 2%;
+    display: flex;
+}
+
+p {
+    margin-left: 1em;
+}
+
+.title {
+    text-align: center;
+}
+
