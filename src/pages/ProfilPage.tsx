@@ -1,4 +1,4 @@
-import { IonBackButton, IonButtons, IonCard, IonContent, IonHeader, IonItem, IonLabel, IonList, IonPage, IonTitle, IonToolbar } from "@ionic/react";
+import { IonBackButton, IonButton, IonButtons, IonCard, IonContent, IonHeader, IonItem, IonLabel, IonList, IonPage, IonTitle, IonToolbar } from "@ionic/react";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import { profilService } from "../services/ProfilService";
@@ -42,7 +42,10 @@ const ProfilPage: React.FC = () => {
           {profil?.skills.map((skill: Skill, index: number) => (
             <IonItem key={index} routerLink={`/competence/${skill.id}`}>
               <IonLabel>{skill.name + " " + skill.level}</IonLabel>
-              <button onClick={() => editProfil(skill)}>Edit</button>
+              <IonButton id="open-modal" expand="block">
+                Edit
+              </IonButton>
+              
             </IonItem>
           ))}
         </IonList>

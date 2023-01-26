@@ -1,4 +1,4 @@
-import { IonBackButton, IonButtons, IonCard, IonContent, IonHeader, IonItem, IonLabel, IonList, IonPage, IonTitle, IonToolbar } from "@ionic/react";
+import { IonBackButton, IonButton, IonButtons, IonCard, IonContent, IonHeader, IonItem, IonLabel, IonList, IonPage, IonTitle, IonToolbar } from "@ionic/react";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import { profilService } from "../services/ProfilService";
@@ -50,7 +50,9 @@ const CompetencePage = () => {
           {sortProfils().map((profil: Profil, index: number) => (
             <IonItem key={index} routerLink={`/profil/${profil.id}`}>
               <IonLabel>{profil.first_name + " " + profil.last_name}</IonLabel>
-              <button>Edit</button>
+              <IonButton id="open-modal" expand="block">
+                Edit
+              </IonButton>
             </IonItem>
           ))}
         </IonList>
